@@ -1,0 +1,17 @@
+name: ItemUpgrades
+version: ${project.version}
+main: dk.mineconed.itemupgrades.ItemUpgrades
+author: Mineconed
+api-version: 1.13
+softdepend: [Vault]
+commands:
+  upgrade:
+    aliases: [itemupgrade, upgrades]
+    usage: /upgrade
+permissions:
+  itemupgrades.use:
+    default: true
+  itemupgrades.free:
+    default: false
+  itemupgrades.admin:
+    default: op

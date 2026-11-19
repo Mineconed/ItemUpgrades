@@ -1,0 +1,52 @@
+# ItemUpgrades
+# Made by Mineconed
+
+# Language: en or da
+language: en
+
+# Max upgrade level
+max_level: 10
+
+# xp = pay with XP levels, money = pay with money (needs Vault)
+cost_type: xp
+# Price for level 1, and how much more each level costs
+cost:
+  base: 5
+  per_level: 5
+
+# Chance (percent) for level 1, 2, 3 ... The last number is used for the rest
+success_chance: [100, 100, 95, 90, 80, 70, 60, 50, 40, 30]
+
+# Lose a level when an upgrade fails
+downgrade_on_fail: false
+
+# Tell everyone when someone reaches the max level
+broadcast_max: true
+
+# What can be upgraded. items = the end of the item name (SWORD matches DIAMOND_SWORD)
+# enchants = each upgrade gives +1 to these
+categories:
+  sword:
+    items: [SWORD]
+    enchants: [SHARPNESS]
+  axe:
+    items: [AXE]
+    enchants: [EFFICIENCY, SHARPNESS]
+  pickaxe:
+    items: [PICKAXE]
+    enchants: [EFFICIENCY]
+  shovel:
+    items: [SHOVEL, SPADE]
+    enchants: [EFFICIENCY]
+  hoe:
+    items: [HOE]
+    enchants: [EFFICIENCY]
+  armor:
+    items: [HELMET, CHESTPLATE, LEGGINGS, BOOTS]
+    enchants: [PROTECTION]
+  bow:
+    items: [BOW]
+    enchants: [POWER]
+  rod:
+    items: [FISHING_ROD]
+    enchants: [LURE]
